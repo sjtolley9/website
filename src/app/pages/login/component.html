@@ -35,7 +35,7 @@
         mode="indeterminate"
       ></mat-progress-bar>
       <mat-progress-bar
-        *ngIf="failedLogin"
+        *ngIf="failedLogin && !loggingIn"
         mode="determinate"
         value="100"
         color="warn"
